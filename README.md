@@ -1,2 +1,2 @@
-# Hell
-suck my big tiny balls
+# Savvy Picker
+Picker that picks students based on their attributes
