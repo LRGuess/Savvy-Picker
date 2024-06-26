@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  student_amount: 1
 
 two:
   name: MyString
+  student_amount: 1
