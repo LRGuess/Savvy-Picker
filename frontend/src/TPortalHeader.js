@@ -17,7 +17,6 @@ function TPHeader() {
       setIsDarkMode(!isDarkMode);
     }; 
 
-
     return (
       <div className="container">
         <div>
