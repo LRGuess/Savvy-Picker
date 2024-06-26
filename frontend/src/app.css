@@ -7,3 +7,27 @@
 .ld-button-spacing{
     margin-left: 300px;
 }
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Ensure Bulma's elements adapt to the theme */
+.light-mode .card, .light-mode .button {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode .card, .dark-mode .button {
+    background-color: #1e1e1e;
+    color: white;
+}
+.light-mode .title {
+    color: black;
+}
