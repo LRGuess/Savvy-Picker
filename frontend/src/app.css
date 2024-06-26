@@ -20,7 +20,7 @@
 
 /* Ensure Bulma's elements adapt to the theme */
 .light-mode .card, .light-mode .button {
-    background-color: white;
+    background-color: #F3F2ED;
     color: black;
 }
 
@@ -30,4 +30,7 @@
 }
 .light-mode .title {
     color: black;
+}
+.dark-mode .inverted {
+    color: black
 }

@@ -26,7 +26,7 @@ const App = () => {
       </button>
           </div>
           <hr className="is-divider" />
-          <p className='is-uppercase has-text-white'>Current Classes:</p>
+          <p className='is-uppercase inversion'>Current Classes:</p>
           <br></br><br></br>
         </div>
         <Classroom class_name={"9-2"} classStudentAmount={26}/>
