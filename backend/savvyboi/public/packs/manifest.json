@@ -1,0 +1,14 @@
+{
+  "entrypoints": {
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-b0edab71206b9a40abc8.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-b0edab71206b9a40abc8.js.map"
+      ]
+    }
+  },
+  "hello_react.js": "/packs/js/hello_react-b0edab71206b9a40abc8.js",
+  "hello_react.js.map": "/packs/js/hello_react-b0edab71206b9a40abc8.js.map"
+}
