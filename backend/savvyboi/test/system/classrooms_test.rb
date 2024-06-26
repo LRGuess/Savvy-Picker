@@ -15,7 +15,6 @@ class ClassroomsTest < ApplicationSystemTestCase
     click_on "New classroom"
 
     fill_in "Name", with: @classroom.name
-    fill_in "Student amount", with: @classroom.student_amount
     click_on "Create Classroom"
 
     assert_text "Classroom was successfully created"
@@ -27,7 +26,6 @@ class ClassroomsTest < ApplicationSystemTestCase
     click_on "Edit this classroom", match: :first
 
     fill_in "Name", with: @classroom.name
-    fill_in "Student amount", with: @classroom.student_amount
     click_on "Update Classroom"
 
     assert_text "Classroom was successfully updated"
