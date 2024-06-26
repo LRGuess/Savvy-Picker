@@ -34,3 +34,15 @@
 .dark-mode .inverted {
     color: black
 }
+.dark-mode .ld-toggle{
+    background-color: white;
+}
+.light-mode .ld-toggle{
+    background-color: #515151;
+}
+.ld-toggle {
+    margin-top: 10px !important;
+}
+.title {
+    margin-top: 20px !important;
+}
