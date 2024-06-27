@@ -1,13 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Classrooms</h1>
+<h1 class="title">Classrooms</h1>
+
+<br>
 
 <div id="classrooms">
   <% @classrooms.each do |classroom| %>
-    <%= render classroom %>
+    <%= classroom.name %>
     <p>
       <%= link_to "Show this classroom", classroom %>
     </p>
+    <br>
   <% end %>
 </div>
 

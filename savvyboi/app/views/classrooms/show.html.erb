@@ -3,8 +3,10 @@
 <%= render @classroom %>
 
 <div>
-  <%#= link_to "Add new student", new_student_path %>
-  <%= link_to "Edit this classroom", edit_classroom_path(@classroom) %>
-  <%= link_to "Back to classrooms", classrooms_path %>
+
+  <%= link_to "Edit this classroom", edit_classroom_path(@classroom) %> |
+  <%= link_to "Back to classrooms", classrooms_path %> |
+  <%= link_to "Add Student", classroom_add_student_path(@classroom) %>
+
   <%= button_to "Destroy this classroom", @classroom, method: :delete %>
 </div>

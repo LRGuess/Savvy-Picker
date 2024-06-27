@@ -57,6 +57,13 @@ class ClassroomsController < ApplicationController
     end
   end
 
+  def add_student
+    puts "hi there"
+    @classroom = Classroom.find(params[:classroom_id])
+    @student = Student.new
+    @student.classroom = @classroom
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_classroom
