@@ -7,7 +7,7 @@ import SettingsIcon from './assets/settings.gif';
 function Footer() {
     return (
       <div className="container ClassesListSpacing">
-        <div class="card">
+        <div>
             <div class="card-content">
                 <div class="content">
                     <p>test</p>

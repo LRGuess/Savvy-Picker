@@ -18,7 +18,6 @@ const App = () => {
         <Classroom class_name={"SNIFF"} classStudentAmount={3}/>
         <Classroom class_name={"SNIFF"} classStudentAmount={3}/>
         <footer>
-          <Footer />
         </footer>
       </div>
     );
