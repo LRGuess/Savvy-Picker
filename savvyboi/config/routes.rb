@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :students
   resources :classrooms do
     get "add_student", to: "classrooms#add_student"
   end
-
+  devise_for :users
   root 'classrooms#index'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
