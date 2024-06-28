@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
   # GET /students/new
   def new
     @student = Student.new
+    @student.classroom_id = @classroom.id
   end
 
   # GET /students/1/edit
@@ -21,6 +22,7 @@ class StudentsController < ApplicationController
 
   # POST /students or /students.json
   def create
+    puts params
     @student = Student.new(student_params)
 
     respond_to do |format|
@@ -49,11 +51,10 @@ class StudentsController < ApplicationController
 
   # DELETE /students/1 or /students/1.json
   def destroy
-
     @student.destroy!
 
     respond_to do |format|
-      format.html { redirect_to classroom_url(@student.classroom), notice: "Student was successfully destroyed." }
+      format.html { redirect_to students_url, notice: "Student was successfully destroyed." }
       format.json { head :no_content }
     end
   end
