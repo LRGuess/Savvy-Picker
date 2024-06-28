@@ -1,4 +1,3 @@
-// src/Classroom.js
 import React, {useState, useEffect} from 'react';
 import 'bulma/css/bulma.min.css';
 import DarkModeIcon from './assets/DarkModeIcon.gif';

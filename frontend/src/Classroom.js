@@ -1,4 +1,3 @@
-// src/Classroom.js
 import React from 'react';
 import 'bulma/css/bulma.min.css';
 import './Classroom.css'

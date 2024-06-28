@@ -2,6 +2,7 @@ import React from 'react';
 import './app.css'
 import Classroom from './Classroom'; 
 import Header from './TPortalHeader';
+import Footer from './UniFooter';
 
 const App = () => {
     return (
@@ -16,7 +17,9 @@ const App = () => {
         <Classroom class_name={"SNIFF"} classStudentAmount={3}/>
         <Classroom class_name={"SNIFF"} classStudentAmount={3}/>
         <Classroom class_name={"SNIFF"} classStudentAmount={3}/>
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
 }
