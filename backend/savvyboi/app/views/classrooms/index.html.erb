@@ -1,14 +1,26 @@
-<p style="color: green"><%= notice %></p>
 
 <h1>Classrooms</h1>
 
-<div id="classrooms">
-  <% @classrooms.each do |classroom| %>
-    <%= render classroom %>
-    <p>
-      <%= link_to "Show this classroom", classroom %>
-    </p>
-  <% end %>
-</div>
+<%= link_to 'New Classroom', new_classroom_path %>
 
-<%= link_to "New classroom", new_classroom_path %>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Student Count</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @classrooms.each do |classroom| %>
+      <tr>
+        <td><%= classroom.name %></td>
+        <td><%= classroom.students %></td>
+        <td><%= link_to 'Show', classroom %></td>
+        <td><%= link_to 'Edit', edit_classroom_path(classroom) %></td>
+        <td><%= link_to 'Destroy', classroom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
